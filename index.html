@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web-app</title>
+    <link rel="stylesheet" href="index.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="container-sec">
+            <div class="section-1">
+                <table id="t01">
+                    <tr>
+                        <th class="border-none">Product</th>
+                        <th>Brand</th>
+                        <th>Type</th>
+                        <th>Weight</th>
+                        <th>Quantity</th>
+                    </tr>
+                </table>
+                <h1 id="nodata">No Data</h1>
+            </div>
+            <div class="section-2">
+                <div class="background">
+                        <img class="inner-image-1" src="quotation_end.png">
+                        <img  class="inner-image" src="quotation_start.png">
+                        <i class="icon1 material-icons">close</i>
+                        <div class="round">
+                            <i class="icon material-icons">chevron_right</i>
+                        </div>           
+                </div>
+                <div class="input-sec" id="input-sec">
+                    <div class="input-sec1">
+                        <p class="input-field bordernone textcolor" id="item">Product Name</p>
+                    </div>
+                    <div class="input-sec2">
+                        <p class="input-field" id="brand" >Brand</p>
+                    </div>
+                    <div class="line"></div>
+                    <div class="input-sec2">
+                        <p class="input-field bordernone" id="sub_type">Type</p>
+                    </div>
+                    <div class="input-sec2">
+                        <p class="input-field quentity-btn" id="quantity">Quantity</p>
+                    </div>
+                    <div class="input-sec2">
+                        <p class="input-field" id="weight" >Weight</p>
+                    </div>
+                </div>
+                <div class="btn">
+                    <button class="add-btn" id="replace">Replace</button>
+                    <button class="add-btn" id="add-btn" onclick="addItemstable()" value="addnew">Add new</button>
+                </div>
+                <div class="voice-icon" onclick="addItems()">
+                    <i class="icon2 material-icons">keyboard_voice</i>  
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="big-container">
+        <div class="containers" id="containers">
+            <i class="icon3 material-icons" id="icon3">close</i>
+            <h2>Update Quantity</h2>
+           
+            <input type="number" id="number" class="number">
+            <div class="numbers" id="numbers">
+                <div class="num" id="1">1</div>
+                <div class="num" id="2" >2</div>
+                <div class="num" id="3" >3</div>
+                <div class="num" id="4" >4</div>
+                <div class="num" id="5" >5</div>
+                <div class="num" id="6">6</div>
+                <div class="num" id="7">7</div>
+                <div class="num" id="8">8</div>
+                <div class="num" id="9">9</div>
+            </div>
+            <input type="reset" class="btns" value="reset">
+            <input type="submit" class="btns" value="submit">
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
